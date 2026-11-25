@@ -1,0 +1,21 @@
+:root{--bg:#faf7f5;--ink:#241a1d;--soft:#6b5a5f;--line:#e6dcd8;--rose:#a6304f;--card:#fff}
+@media(prefers-color-scheme:dark){:root{--bg:#171214;--ink:#f3ebe9;--soft:#b5a4a6;--line:#352a2d;--rose:#f08aa2;--card:#1f181b}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif}
+.wrap{max-width:720px;margin:0 auto;padding:0 20px}
+header{border-bottom:1px solid var(--line)}
+header .wrap{display:flex;flex-wrap:wrap;gap:8px 20px;align-items:center;justify-content:space-between;padding-top:18px;padding-bottom:18px}
+.brand{font:600 1.05rem/1 Georgia,"Times New Roman",serif;color:var(--ink);text-decoration:none;display:inline-flex;gap:10px;align-items:center}
+.brand svg{width:26px;height:26px;color:var(--rose)}
+nav{display:flex;gap:18px;font-size:.95rem}
+a{color:var(--rose)} a:focus-visible{outline:2px solid var(--rose);outline-offset:3px;border-radius:3px}
+nav a{text-decoration:none}
+main{padding:56px 0 72px}
+h1{font:600 clamp(2rem,6vw,2.9rem)/1.15 Georgia,"Times New Roman",serif;margin:0 0 16px;letter-spacing:-.01em;text-wrap:balance}
+h2{font-size:1.15rem;margin:40px 0 8px} p{margin:0 0 14px} .lead{font-size:1.15rem;color:var(--soft)}
+.app{display:flex;gap:20px;align-items:center;margin-top:36px;padding:22px;background:var(--card);border:1px solid var(--line);border-radius:18px;color:inherit;text-decoration:none}
+.app:hover{border-color:var(--rose)}
+.app strong{display:block;font-size:1.15rem} .app span{color:var(--soft)}
+.icon{width:76px;height:76px;border-radius:18px;flex:none} .icon.big{width:104px;height:104px;border-radius:24px;margin-bottom:22px}
+ul{padding-left:1.2em} li{margin-bottom:6px} .meta{color:var(--soft)}
+footer{border-top:1px solid var(--line);color:var(--soft);font-size:.9rem} footer .wrap{padding-top:22px;padding-bottom:34px}
